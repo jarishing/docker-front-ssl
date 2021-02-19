@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default (props) => {
     async function test(){
-        const response = await axios.get('http://localhost:8080');
+        const response = await axios.get('http://10.0.1.60:8080');
         return document.getElementById('message').innerText = JSON.stringify(response.data, null, 4);
     }
 
